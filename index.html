@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Eevan pyöräsivut</title>
+  <link rel="stylesheet" type="text/css" href="tyyli.css">
+  <script src="assetts/script.js"></script>
+</head>
+
+<body>
+  <h1>EEVAN PYÖRÄSIVUT</h1>
+  <p>Tervetuloa Eevan kotisivuille</p>
+  <article>
+    Tällä sivustolla löydät tietoa minusta ja pyöristäni. Halusin tehdä kotisivuilleni vertailun eri pyöristä mitä omistan. Pyörät eroavat toisistaan mm. käytettyjen komponenttien suhteen.
+  </article>
+  <h2>Otsikko 2</h2>
+  <p>Paina tästä</p>
+  <button id="myBtn">Paina tästä</button>
+  <p id="demo"></p>
+
+  <script>
+    const element = document.getElementById("myBtn");
+    element.addEventListener("click", function() {
+      document.getElementById("demo").innerHTML = "Painoit nappia";
+    });
+  </script>
+
+  <!-- Removed the script tags for prompt and alert as they were not used properly -->
+
+  <p>Lempipyörämerkkini:</p>
+  <ol>
+    <li>Corratec</li>
+    <li>TREK</li>
+    <li>Active Lane</li>
+    <li>Cannondale</li>
+  </ol>
+
+  <input type="button" value="Klikkaa nyt" onClick="window.alert('Painoit nappia');" />
+
+  <table summary="taulukkoesimerkki1" border="1" cellpadding="5">
+    <tr>
+      <th>Merkki</th>
+      <th>Vaihteisto</th>
+      <th>Jarrut</th>
+      <th>Käyttövoima</th>
+      <th>Malli</th>
+      <th>Renkaiden (tuuma-)koko</th>
+    </tr>
+    <tr>
+      <td>Active Lane</td>
+      <td>Shimano</td>
+      <td>Levyjarrut</td>
+      <td>Sähkö</td>
+      <td>Hybridi</td>
+      <td>28", 47-622</td>
+    </tr>
+    <tr>
+      <td>Corratec</td>
+      <td>Shimano</td>
+      <td>Hydrauliset jarrut</td>
+      <td>Luomu</td>
+      <td>Maastopyörä</td>
+      <td>29", 54-622</td>
+    </tr>
+  </table>
+
+  <aside>
+    <div class="row">
+      <div class="column">
+        <img src="https://cloudebikes.ca/cdn/shop/products/cruiser_1.webp?v=1650468049" alt="Bike1"
+          onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="https://www.pyorasuvala.fi/xc-hardtail-29/trek-roscoe-7-2022" alt="Bike2"
+          onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img
+          src="https://images.internetstores.de/products/1287733/02/79155d/cannondale-trail-6-slate-grey-1.jpg?forceSize=true&forceAspectRatio=true&useTrim=true&size=613x613"
+          alt="Bike3" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img
+          src="https://dassets.shimano.com/content/dam/global/cg1SHICCycling/final/products/cg2SHICComponent/cg3SHICRearDerailleur/cg4SHICRearDerailleur/RD-U6070-shic219-primary_1.jpg/jcr:content/renditions/RD-U6070-shic219-primary_1_750_750.jpeg"
+          alt="Bike4" onclick="myFunction(this);">
+      </div>
+    </div>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+  </aside>
+
+  <p><br />
+
+    Kysely: Mikä on lempi-pyörämerkkisi?
+    <form action="/action_page.php">
+      <input type="radio" id="corratec" name="testi" value="Corratec">
+      <label for="Corratec">Corratec</label><br>
+      <input type="radio" id="Trek" name="testi" value="Trek">
+      <label for="Trek">Trek</label><br>
+      <input type="radio" id="Cannondale" name="testi" value="Cannondale">
+      <label for="Cannondale">Cannondale</label><br><br>
+      <input type="submit" value="Osallistu kyselyyn">
+      <!-- Kyselyn vastaus puuttuu -->
+    </form>
+  </p>
+
+  <p>Tässä voit katsoa Oulun kaupungin pyöräilyliikenteen häiriötiedotteet:<br><br>
+    <a href="https://www.opendata.fi/data/fi/dataset/oulun-kaupungin-kavely-ja-pyorailyliikenteen-hairiotiedotteet"> Tämä on joku linkki.</a>.
+  </p><br><br>
+
+  <footer>
+    <nav>
+      <a href="https://www.cannondale.com/en/">Cannondale</a> |
+      <a href="https://www.corratec.com/">Corratec</a> |
+      <a href="https://www.shimano.com/en/">Shimano</a> |
+      <a href="https://www.trekbikes.com/">Trek</a>
+    </nav>
+
+    <p>Date/Time: DD.MM.YYYY hh:mm <br>
+  </footer>
+</body>
+
+</html>
